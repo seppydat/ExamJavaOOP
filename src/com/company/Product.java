@@ -62,7 +62,7 @@ public class Product {
         for (int i=0; i<products.length-1; i++) {
             for (int j=i+1; j<products.length; j++) {
                 if (products[i].getPrice() > products[j].getPrice()) {
-                    Product tmp = new Product();
+                    Product tmp;
                     tmp = products[j];
                     products[j] = products[i];
                     products[i] = tmp;
